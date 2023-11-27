@@ -64,6 +64,9 @@ def game_loop():
         score_surface = score_font.render(f'Score: {game.score}', True, obstacle_color)
         screen.blit(score_surface, (offset - 5, offset + cell_size * number_of_cells + 10))
 
+        high_score_surface = score_font.render(f'Highest Score: {game.high_score}', True, obstacle_color)
+        screen.blit(high_score_surface, (offset - 5, offset + cell_size * number_of_cells + 40))
+
         game.draw(screen, cell_size, snake_color, food_element)
         pygame.draw.rect(screen, obstacle_color,
                          (offset - 5, offset - 5, cell_size * number_of_cells + 10, cell_size * number_of_cells + 10),

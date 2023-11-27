@@ -14,6 +14,7 @@ class game_class():
         self.food = food_class(self.snake.body)
         self.state = "RUNNING"
         self.score = 0
+        self.high_score = 0
 
     def draw(self, screen, cell_size, snake_color, food_element):
         self.food.draw(cell_size, screen, food_element)
@@ -43,6 +44,8 @@ class game_class():
         self.snake.reset()
         self.food.position = self.food.generate_random_position(self.snake.body)
         self.state = "STOPPED"
+        if self.score > self.high_score:
+            self.high_score = self.score
         self.score = 0
         self.snake.wall_hit_sound.play()
 
