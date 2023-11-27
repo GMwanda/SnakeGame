@@ -41,7 +41,8 @@ Retro Snake Game is a classic snake game implemented in Python using the Pygame 
 
 ## Screenshots
 
-![image](https://github.com/GMwanda/SnakeGame/assets/98454661/235b5394-b345-4794-988d-ba760e64a64a)
+![image](https://github.com/GMwanda/SnakeGame/assets/98454661/8cc0c583-9ff6-47d8-a6bc-5d37e9f1a47e)
+
 
 
 ## File Structure
